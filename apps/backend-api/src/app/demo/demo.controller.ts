@@ -10,15 +10,15 @@ export class DemoController {
   ) {}
 
 
-  @Post('createActivity')
+  @Post('create')
   @ApiOperation({ title: '创建' })
-  async createActivity(@Body() someItemDto: SomeItem): Promise<any> {
+  async create(@Body() someItemDto: SomeItem): Promise<any> {
 
   }
 
-  @Get('getActivityDetail')
+  @Get('getDetail')
   @ApiOperation({ title: '查询' })
-  async getActivityDetail(@Query('id') id: string): Promise<any> {
+  async getDetail(@Query('id') id: string): Promise<any> {
     return id;
   }
 
